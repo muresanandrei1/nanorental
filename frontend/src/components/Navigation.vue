@@ -67,7 +67,6 @@ export default {
 @import "../scss/variables/_colors.scss";
 .main-navigation {
   background: #fff;
-  border-bottom: 1px solid red;
 }
 .mobile-menu {
   padding: 24px;
@@ -85,7 +84,7 @@ export default {
   a {
     color: $grey-dark;
     &.router-link-active {
-      color: $error;
+      color: $red;
     }
   }
 }

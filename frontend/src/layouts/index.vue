@@ -2,7 +2,7 @@
   <v-app>
     <Navigation/>
     <v-content>
-      <v-container>
+      <v-container fluid class="pa-0">
         <slot/>
       </v-container>
     </v-content>
