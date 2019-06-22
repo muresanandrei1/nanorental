@@ -1,0 +1,40 @@
+{
+  "connection": "default",
+  "collectionName": "cars",
+  "info": {
+    "name": "cars",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "specifications": {
+      "type": "text"
+    },
+    "type": {
+      "enum": [
+        "car",
+        "van"
+      ],
+      "type": "enumeration",
+      "default": "car"
+    }
+  }
+}
