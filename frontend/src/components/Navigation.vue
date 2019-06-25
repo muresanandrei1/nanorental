@@ -79,7 +79,7 @@ export default {
   font-size: 14px;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: 1px;
   a {
     color: $grey-dark;

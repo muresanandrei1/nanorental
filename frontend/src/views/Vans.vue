@@ -1,20 +1,20 @@
 <template>
-  <List :items="cars"/>
+  <List :items="vans"/>
 </template>
 <script>
 import { getAllCars } from "../service/cars";
 
 import List from "../layouts/List";
 export default {
-  name: "CarsPage",
+  name: "VansPage",
   components: { List },
   data: () => ({
-    cars: []
+    vans: []
   }),
   mounted() {
     getAllCars().then(rsp => {
-      const cars = rsp.data;
-      this.cars = cars.filter(car => car.type === "car");
+      const vans = rsp.data;
+      this.vans = vans.filter(car => car.type === "van");
     });
   }
 };
