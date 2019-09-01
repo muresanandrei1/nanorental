@@ -4,7 +4,7 @@
       <v-layout row justify-space-between>
         <v-flex md2>
           <router-link to="/">
-            <img src="../assets/logo.png" width="160">
+            <img src="../assets/logo.png" width="160" />
           </router-link>
         </v-flex>
         <v-layout row justify-end align-center class="hidden-sm-and-down">
@@ -13,7 +13,7 @@
           </v-flex>
         </v-layout>
         <div class="hidden-md-and-up">
-          <v-toolbar-side-icon @click.stop="drawer = !drawer"/>
+          <v-toolbar-side-icon @click.stop="drawer = !drawer" />
           <v-navigation-drawer v-model="drawer" absolute temporary right>
             <v-list class="mobile-menu">
               <v-list-tile v-for="link in links" :key="link.name">

@@ -14,27 +14,54 @@
     "comment": ""
   },
   "attributes": {
-    "name": {
+    "nume": {
       "type": "string"
     },
-    "price": {
-      "type": "integer"
-    },
-    "photo": {
+    "poza": {
       "model": "file",
       "via": "related",
       "plugin": "upload"
     },
-    "specifications": {
+    "dotari": {
       "type": "text"
     },
-    "type": {
+    "tip": {
       "enum": [
         "car",
         "van"
       ],
       "type": "enumeration",
       "default": "car"
+    },
+    "caracteristici": {
+      "type": "string"
+    },
+    "transmisie": {
+      "type": "string"
+    },
+    "consum": {
+      "type": "string"
+    },
+    "putere": {
+      "type": "string"
+    },
+    "volum": {
+      "type": "string"
+    },
+    "carburant": {
+      "type": "string"
+    },
+    "pret1": {
+      "type": "string"
+    },
+    "pret2": {
+      "type": "string"
+    },
+    "pret3": {
+      "type": "string"
+    },
+    "pret4": {
+      "type": "string"
     }
   }
 }

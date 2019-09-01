@@ -1,16 +1,20 @@
 <template>
   <div class="app">
     <Layout>
-      <router-view/>
+      <router-view />
     </Layout>
   </div>
 </template>
 
 <script>
+import { apiCall } from "./service/api";
 import Layout from "./layouts";
 export default {
   name: "App",
-  components: { Layout }
+  components: { Layout },
+  mounted() {
+    apiCall("get", "/api/email/settings/development");
+  }
 };
 </script>
 

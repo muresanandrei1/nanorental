@@ -3,6 +3,7 @@ import Router from "vue-router";
 import Home from "./views/Home.vue";
 import Vans from "./views/Vans.vue";
 import Cars from "./views/Cars.vue";
+import Book from "./views/Book.vue";
 import CarDetails from "./views/Cars/CarDetails.vue";
 
 Vue.use(Router);
@@ -35,6 +36,11 @@ const routes = [
     path: "/cars/:id",
     name: "CarDetails",
     component: CarDetails
+  },
+  {
+    path: "/book/:id",
+    name: "Book",
+    component: Book
   }
 ];
 
